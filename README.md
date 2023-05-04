@@ -1,30 +1,12 @@
-[![CI Testing](https://github.com/t-ho/mern-stack/workflows/CI%20Testing/badge.svg?branch=master)](https://github.com/t-ho/mern-stack/actions)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![license](https://img.shields.io/github/license/t-ho/mern-stack)](https://github.com/t-ho/mern-stack/blob/master/LICENSE)
-
-<p align="center"><a href="https://github.com/t-ho/mern-stack"><img alt="mern-logo" width="360" src="https://raw.githubusercontent.com/t-ho/mern-stack/assets/assets/mern-logo.png"/></a></p>
-
 # MERN Stack with Docker
 
 ### MongoDB - Express - React - Redux - React Native - NodeJS
 
 MERN stack is intended to provide a starting point for building full-stack JavaScript applications, including dynamic web and mobile apps. The stack is made of MongoDB, Express, React, Redux, React Native and NodeJS.
 
-[![mern-workflow](https://raw.githubusercontent.com/t-ho/mern-stack/assets/assets/mern-workflow.gif)](https://github.com/t-ho/mern-stack)
-
-## Demo
-
-- Web app [demo](https://mernstack.tdev.app)
-- Mobile app [demo](https://expo.io/@t-ho/mern-stack)
-- Dummy accounts:
-  - email: `admin@tdev.app` - password: `password`
-  - email: `user@tdev.app` - password: `password`
-
 ## Project Breakdown
 
 ### 1. API Server
-
-**NOTE: The full API documentation can be found [here](https://tdev.app/mern-stack/server)**
 
 - Directory `server`
 - Todo:
@@ -43,8 +25,6 @@ MERN stack is intended to provide a starting point for building full-stack JavaS
   - [x] Input validation and sanitization - [joi](https://www.npmjs.com/package/joi)
   - [x] Integration testing - [mocha](https://www.npmjs.com/package/mocha) - [chai](https://www.npmjs.com/package/chai) - [supertest](https://www.npmjs.com/package/supertest)
   - [x] Docker support - [node:lts-buster](https://hub.docker.com/_/node)
-    - [x] Dev mode - See [server/Dockerfile](https://github.com/t-ho/mern-stack/blob/master/server/Dockerfile)
-    - [x] Prod mode - See [server/Dockerfile.prod](https://github.com/t-ho/mern-stack/blob/master/server/Dockerfile.prod)
 
 ### 2. React Client
 
@@ -52,7 +32,7 @@ MERN stack is intended to provide a starting point for building full-stack JavaS
 - Created by using [create-react-app](https://www.npmjs.com/package/create-react-app)
 - Todo:
   - [x] Redux store - [react-redux](https://www.npmjs.com/package/react-redux)
-  - [x] Redux form - [redux-form](https://redux-form.com/8.3.0). NOTE: Migrate to [formik](https://jaredpalmer.com/formik) soon
+  - [x] Redux form - [redux-form](https://redux-form.com/8.3.0).
   - [x] Router - [react-router-dom](https://www.npmjs.com/package/react-router-dom) - [connected-react-router](https://www.npmjs.com/package/connected-react-router)
   - [x] Material design - [Material-UI](https://material-ui.com)
   - [ ] Authentication pages
@@ -66,13 +46,13 @@ MERN stack is intended to provide a starting point for building full-stack JavaS
     - [ ] User list page
     - [ ] User edit page
   - [x] Docker support - [node:lts-buster](https://hub.docker.com/_/node) - [nginx:stable-alpine](https://hub.docker.com/_/nginx)
-    - [x] Dev mode - See [client/Dockerfile](https://github.com/t-ho/mern-stack/blob/master/client/Dockerfile)
-    - [x] Prod mode - See [client/Dockerfile.prod](https://github.com/t-ho/mern-stack/blob/master/client/Dockerfile.prod)
+    - [x] Dev mode - See [client/Dockerfile](https://github.com/smartman1234/mern-stack/blob/master/client/Dockerfile)
+    - [x] Prod mode - See [client/Dockerfile.prod](https://github.com/smartman1234/mern-stack/blob/master/client/Dockerfile.prod)
 
 ### 3. React Native - Mobile
 
 - Directory `mobile`
-- Created by using [react-native-cli](https://github.com/react-native-community/cli). If you want to use Expo, please check out [expo](https://github.com/t-ho/mern-stack/tree/expo) branch and see docs [here](https://github.com/t-ho/mern-stack/blob/expo/README.md)
+- Created by using [react-native-cli](https://github.com/react-native-community/cli). If you want to use Expo, please check out [expo](https://github.com/smartman1234/mern-stack/tree/expo) branch and see docs [here](https://github.com/smartman1234/mern-stack/blob/expo/README.md)
 - Todo:
   - [x] Redux store - [react-redux](https://www.npmjs.com/package/react-redux)
   - [x] Router - [react-navigation](https://reactnavigation.org)
@@ -89,8 +69,8 @@ MERN stack is intended to provide a starting point for building full-stack JavaS
 - Directory `nginx-proxy`
 - Todo:
   - [x] Reverse proxy server - [nginx:stable](https://hub.docker.com/_/nginx)
-    - [x] Dev mode - See [nginx-proxy/Dockerfile](https://github.com/t-ho/mern-stack/blob/master/nginx-proxy/Dockerfile)
-    - [x] Prod mode - See [nginx-proxy/Dockerfile.prod](https://github.com/t-ho/mern-stack/blob/master/nginx-proxy/Dockerfile.prod)
+    - [x] Dev mode - See [nginx-proxy/Dockerfile](https://github.com/smartman1234/mern-stack/blob/master/nginx-proxy/Dockerfile)
+    - [x] Prod mode - See [nginx-proxy/Dockerfile.prod](https://github.com/smartman1234/mern-stack/blob/master/nginx-proxy/Dockerfile.prod)
       - [x] Install and auto-renew SSL certificate
       - [x] Force all HTTP traffic (domain name and IP address) to HTTPS
       - [x] Use recommended configuration - [server-configs-nginx](https://github.com/h5bp/server-configs-nginx)
@@ -107,10 +87,10 @@ MERN stack is intended to provide a starting point for building full-stack JavaS
 
 ### 1. Clone the `mern-stack` repository
 
-**If you want to use Expo for developing mobile app, please check out the [expo](https://github.com/t-ho/mern-stack/tree/expo) branch and see instructions [here](https://github.com/t-ho/mern-stack/blob/expo/README.md)**
+**If you want to use Expo for developing mobile app, please check out the [expo](https://github.com/smartman1234/mern-stack/tree/expo) branch and see instructions [here](https://github.com/smartman1234/mern-stack/blob/expo/README.md)**
 
 ```bash
-git clone https://github.com/t-ho/mern-stack.git
+git clone https://github.com/smartman1234/mern-stack.git
 cd mern-stack
 cp .env.example .env
 cp client/.env.example client/.env
@@ -137,11 +117,6 @@ npm start
 # Web client is running at http://localhost:PORT (http://localhost:3000 by default)
 # Mobile - Expo DevTools is running at http://localhost:19002
 ```
-
-**NOTE:**
-
-- **For the sake of simplicity, we use free service [ngrok](https://ngrok.com/) to create a public API URL for mobile development. The downside of this approach is that the public URL is only available for 8 hours, so we need to restart the npm process every 8 hours.**
-- **After 8 hours, the `mobile` process will be terminated, and a warning message will be displayed in your terminal to remind you to restart npm process.**
 
 To restart npm process (_If you don't start the mobile development process, ignore this step_):
 
@@ -200,7 +175,7 @@ You can start the MERN stack (`server` and `client` only) using `docker-compose`
 **Development mode**
 
 ```bash
-git clone https://github.com/t-ho/mern-stack.git
+git clone https://github.com/smartman1234/mern-stack.git
 cd mern-stack
 cp .env.example .env
 cp client/.env.example client/.env
@@ -215,7 +190,7 @@ The `nginx-proxy` server will listen on port `8080` (`NGINX_PROXY_PORT`) by defa
 **Production mode**
 
 ```bash
-git clone https://github.com/t-ho/mern-stack.git
+git clone https://github.com/smartman1234/mern-stack.git
 cd mern-stack
 cp .env.example .env.prod
 
@@ -230,9 +205,3 @@ In the root (`mern-stack`) directory, run:
 ```bash
 npm run test
 ```
-
-Testing frameworks:
-
-- Server: [mocha](https://mochajs.org/) - [chai](https://www.chaijs.com/) - [supertest](https://github.com/visionmedia/supertest)
-- Web-client: [jest](https://jestjs.io/)
-- Mobile:
